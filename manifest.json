@@ -1,0 +1,25 @@
+{
+  "name": "Slack Icon Freeze",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://app.slack.com/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icon32.png"
+      ],
+      "matches": [
+        "https://app.slack.com/*"
+      ]
+    }
+  ]
+}
