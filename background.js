@@ -6,7 +6,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       target: { tabId },
       args: [iconUrl],
       func: iconUrl => {
-        console.log('hello');
         document.querySelector('link[rel~=\'icon\']').href = iconUrl;
       }
     })
